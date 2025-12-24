@@ -2,7 +2,3 @@
 title: "はじめてのメモ"
 date: 2025-12-24
 ---
-
-
-- notes ディレクトリは自分で作る
-- Quarto + GitHub Pages が無事に動いた
