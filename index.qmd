@@ -1,5 +1,5 @@
 ---
-title: "薬局薬剤師の実験ログ"
+title: "折衷的な薬剤師の実験ログ"
 subtitle: "薬局x自動化 / Python / 日々の実験ログ"
 page-layout: full
 toc: false
@@ -15,6 +15,6 @@ listing:
 
 # はじめまして
 
-これはQuartoで生成生成した実験記録ブログです。
+このホームページは、Quartoで作られています。
 
 ## 最近の記事
