@@ -1,5 +1,10 @@
 project:
+  type: website
+  output-dir: _site
+
+website:
   title: "myblog"
 
-
-
+format:
+  html:
+    theme: cosmo
