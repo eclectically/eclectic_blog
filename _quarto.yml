@@ -13,6 +13,15 @@ website:
         href: notes/index.qmd
       - text: About
         href: about.qmd
+    right:
+      - icon: twitter
+        aria-label: X
+        href: https://x.com/eclectical93914
+        target: _blank
+      - icon: github
+        aria-label: GitHub
+        href: https://github.com/eclectically
+        target: _blank
 
 format:
   html:
