@@ -6,7 +6,7 @@ title: "薬局薬剤師の実験ログ"
 
 これはQuartoで生成生成した実験記録ブログです。
 
-## Noetes
+## Notes
 '''{listing}
 contents: notes
 type: default
