@@ -63,7 +63,7 @@ import pandas as pd
 
 
 画像は
-![](https://www.tcaeco.ac.jp/contents/animalbook/wp-content/uploads/sites/5/2024/12/cat-type_00.jpg)[width=50%]
+![](./images/grok_image_1.jpg)
 
 記事内リンク
 [リンク](#記事内リンク)
