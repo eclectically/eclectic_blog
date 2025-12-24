@@ -63,7 +63,7 @@ import pandas as pd
 
 
 画像は
-![](./images/grok_image_1.jpg)
+![](../images/grok_image_1.jpg)
 
 記事内リンク
 [リンク](#記事内リンク)
