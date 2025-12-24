@@ -1,0 +1,7 @@
+jupyter
+jupyter-cache
+ipykernel
+quarto-cli
+pandas
+matplotlib
+numpy

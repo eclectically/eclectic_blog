@@ -1,4 +1,69 @@
 ---
 title: "はじめてのメモ"
 date: 2025-12-24
+categories: misc
+draft: false
+toc: true
+
+execute:
+    echo: true
+    warning: false
+    message: false
 ---
+
+
+今日はクリスマスイブですね。
+
+ChatGPTとGeminiに聞きながら、QuartoとGitHub Pagesでブログ運用してみようと思います。
+<br>
+本文はマークダウンで書けるということなので、マークダウン自体の勉強をすればよさそう。
+
+
+ハイフンで箇条書き。
+```
+- 箇条書き
+- 途中メモ
+```
+- 箇条書き
+- 途中メモ
+
+"---"で囲んだ部分はメタ情報として認識されると。
+
+一旦ここまで書いたので、pushしてみよう。
+<a id="記事内リンク"></a>
+
+
+強調枠 (Callout)でメモ、注意を綺麗に出せると。
+
+::: {.callout-note}
+{.callout-note} でメモ
+:::
+
+::: {.callout-warning}
+{.callout_warning} で注意
+:::
+
+::: {.callout-tip}
+{.callout_tip} でTIP
+:::
+
+::: {.callout-important}
+{.callout_important} で重要箇所
+:::
+
+::: {.callout-caution}
+{.callout_caution} でCAUTION
+:::
+
+コードを書く時には、バッククオートで囲めば良い。
+```python
+import pandas as pd
+こんなかんじ
+```
+
+
+画像は
+![](https://www.tcaeco.ac.jp/contents/animalbook/wp-content/uploads/sites/5/2024/12/cat-type_00.jpg)[width=50%]
+
+記事内リンク
+[リンク](#記事内リンク)

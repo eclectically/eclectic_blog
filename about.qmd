@@ -1,0 +1,20 @@
+---
+title: "About"
+about:
+  template: jolla
+  image: images/profile_picture_1.jpg
+  links:
+    - icon: twitter
+      text: X
+      href: https://x.com/eclectical93914
+    - icon: github
+      text: GitHub
+      href: https://github.com/eclectically
+---
+
+# About
+
+小さな調剤薬局の折衷的な薬剤師。日々の業務を少しでもサボるためににプログラミングに取り組んでいます。
+薬局内で役立てたいツールとか、ただの趣味のツールとか、アウトプットできる場所を作りたい。
+作ったものその過程などを書いておきます。誰かの役に立ったら良いです。
+このブログは、その実験ログと学びの記録を、できるだけ再現可能な形で残していくための場所です。

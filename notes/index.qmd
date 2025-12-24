@@ -1,0 +1,14 @@
+---
+title: "Notes"
+listing:
+  contents: "."
+  sort: "date desc"
+  type: grid
+  categories: true
+  fields: [image, title, date, description, categories]
+  max-items: 50
+---
+
+# Notes
+
+記事一覧です。

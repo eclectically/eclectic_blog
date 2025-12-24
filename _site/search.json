@@ -1,16 +1,58 @@
 [
   {
+    "objectID": "notes/index.html",
+    "href": "notes/index.html",
+    "title": "Notes",
+    "section": "",
+    "text": "Notes\n記事一覧です。\n\n\n\n\n\n\n\n\n\n\n\n\n\nはじめてのメモ\n\n\n\nmisc\n\n\n\n\n\n\n\nDec 24, 2025\n\n\n\n\n\n\n\n\n\n\n\nipynbをそのまま載せる例\n\n\n\nmisc\n\n\n\n\n\n\n\nJan 1, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About\n小さな調剤薬局の折衷的な薬剤師。日々の業務を少しでもサボるためににプログラミングに取り組んでいます。 薬局内で役立てたいツールとか、ただの趣味のツールとか、アウトプットできる場所を作りたい。 作ったものその過程などを書いておきます。誰かの役に立ったら良いです。 このブログは、その実験ログと学びの記録を、できるだけ再現可能な形で残していくための場所です。"
+  },
+  {
+    "objectID": "about.html#このブログで扱うこと",
+    "href": "about.html#このブログで扱うこと",
+    "title": "About",
+    "section": "",
+    "text": "薬局業務の自動化\nPythonの実験メモ\n学びの記録"
+  },
+  {
+    "objectID": "about.html#運用方針",
+    "href": "about.html#運用方針",
+    "title": "About",
+    "section": "",
+    "text": "できるだけ短く、再現できる形で記録\n必要なら追記・更新する\n参考リンクは本文中に掲載"
+  },
+  {
+    "objectID": "about.html#連絡先",
+    "href": "about.html#連絡先",
+    "title": "About",
+    "section": "",
+    "text": "連絡方法やSNSリンクをここに書きます。"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "薬局薬剤師の実験ログ",
     "section": "",
-    "text": "はじめまして\nこれはQuartoで生成生成した実験記録ブログです。"
+    "text": "これはQuartoで生成生成した実験記録ブログです。"
+  },
+  {
+    "objectID": "notes/iyakuhin_list_Google.html",
+    "href": "notes/iyakuhin_list_Google.html",
+    "title": "ipynbをそのまま載せる例",
+    "section": "",
+    "text": "import pandas as pd\nimport jaconv\n\n\ndf = pd.read_csv('y.csv', encoding='CP932', header=None)\n\n\ndf.head()\n\n\n\n\n\n\n\n\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n...\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n\n\n\n\n0\n0\nY\n610406079\n7\nガスター散２％\n9\nｶﾞｽﾀｰｻﾝ2%\n33\n1\nｇ\n...\n0\n0\n1\nNaN\n20230401\n99999999\n2325003B2029\n2912000\n0\nガスター散２％\n\n\n1\n0\nY\n610406193\n4\nテンマ末\n5\nﾃﾝﾏﾏﾂ\n33\n1\nｇ\n...\n0\n0\n1\nNaN\n20230401\n99999999\n5100133A1011\n7436000\n0\nテンマ末\n\n\n2\n0\nY\n610406227\n8\n花扇加工ブシ末Ｋ\n15\nﾊﾅｵｳｷﾞｶｺｳﾌﾞｼﾏﾂK\n33\n1\nｇ\n...\n0\n0\n1\nNaN\n20230401\n99999999\n5900001A1025\n8876000\n0\n花扇加工ブシ末Ｋ\n\n\n3\n0\nY\n610406231\n13\nバリトゲンＨＤ　９８．６％\n9\nﾊﾞﾘﾄｹﾞﾝHD\n33\n1\nｇ\n...\n0\n0\n1\nNaN\n20230401\n99999999\n7212029X1023\n9079000\n0\nバリトゲンＨＤ\n\n\n4\n0\nY\n610406232\n11\nバリトップＨＤ　９９％\n9\nﾊﾞﾘﾄｯﾌﾟHD\n33\n1\nｇ\n...\n0\n0\n1\nNaN\n20230401\n99999999\n7212022A1037\n9081000\n0\nバリトップＨＤ\n\n\n\n\n5 rows × 35 columns\n\n\n\n\ndf = df.loc[:, [4, 6]]\ncolumns = ['name', 'furigana']\ndf.columns = columns\n\n\ndf['furigana'] = df.apply(lambda x: jaconv.han2zen(x['furigana']), axis=1)\ndf['furigana'] = df.apply(lambda x: jaconv.kata2hira(x['furigana']), axis=1)\n\n\ndf['alpha'] = df.apply(lambda x: jaconv.kana2alphabet(x['furigana']), axis=1)\n\n\ndf\n\n\n\n\n\n\n\n\nname\nfurigana\nalpha\n\n\n\n\n0\nガスター散２％\nがすたーさん2%\ngasutaーsan2%\n\n\n1\nテンマ末\nてんままつ\ntenmamatsu\n\n\n2\n花扇加工ブシ末Ｋ\nはなおうぎかこうぶしまつK\nhanaougikakoubushimatsuK\n\n\n3\nバリトゲンＨＤ　９８．６％\nばりとげんHD\nbaritogenHD\n\n\n4\nバリトップＨＤ　９９％\nばりとっぷHD\nbaritoppuHD\n\n\n...\n...\n...\n...\n\n\n20591\nキシレステシンＡ注射液（カートリッジ）　１．８ｍＬ\nきしれすてしんAちゅうしゃえきかーとりっ\nkishiresuteshinAchuushaekikaーtorixtsu\n\n\n20592\n歯科用キシロカインカートリッジ　１．８ｍＬ\nしかようきしろかいんかーとりっじ\nshikayoukishirokainkaーtorijji\n\n\n20593\nネオザロカインパスタ\nねおざろかいんぱすた\nneozarokainpasuta\n\n\n20594\nペリオクリン歯科用軟膏　１０ｍｇ０．５ｇ\nぺりおくりんしかようなんこう\nperiokurinshikayounankou\n\n\n20595\n歯科用ＴＤゼット・ゼリー\nしかようTDぜっとぜりー\nshikayouTDzettozeriー\n\n\n\n\n20596 rows × 3 columns\n\n\n\n\ndf['database'] = df['name'].str.cat([df['furigana'], df['alpha']], sep='///')\n\n\ndf['database'].to_csv('drug_list.csv')"
   },
   {
     "objectID": "notes/2025-12-24.html",
     "href": "notes/2025-12-24.html",
     "title": "はじめてのメモ",
     "section": "",
-    "text": "notes ディレクトリは自分で作る\nQuarto + GitHub Pages が無事に動いた"
+    "text": "今日はクリスマスイブですね。\nChatGPTとGeminiに聞きながら、QuartoとGitHub Pagesでブログ運用してみようと思います。  本文はマークダウンで書けるということなので、マークダウン自体の勉強をすればよさそう。\nハイフンで箇条書き。\n- 箇条書き\n- 途中メモ\n\n箇条書き\n途中メモ\n\n“—”で囲んだ部分はメタ情報として認識されると。\n一旦ここまで書いたので、pushしてみよう。 \n強調枠 (Callout)でメモ、注意を綺麗に出せると。\n\n\n\n\n\n\nNote\n\n\n\n{.callout-note} でメモ\n\n\n\n\n\n\n\n\nWarning\n\n\n\n{.callout_warning} で注意\n\n\n\n\n\n\n\n\nTip\n\n\n\n{.callout_tip} でTIP\n\n\n\n\n\n\n\n\nImportant\n\n\n\n{.callout_important} で重要箇所\n\n\n\n\n\n\n\n\nCaution\n\n\n\n{.callout_caution} でCAUTION\n\n\nコードを書く時には、バッククオートで囲めば良い。\nimport pandas as pd\nこんなかんじ\n画像は [width=50%]\n記事内リンク リンク"
   }
 ]

@@ -1,13 +1,22 @@
 ---
 title: "薬局薬剤師の実験ログ"
+subtitle: "薬局x自動化 / Python / 日々の実験ログ"
+page-layout: full
+toc: false
 listing:
   contents: "notes"
   sort: "date desc"
-  type: default
+  sort-ui: true
+  type: grid
+  categories: true
+  fields: [image, title, date, description, categories]
+  max-items: 6
 ---
 
 # はじめまして
 
-これはQuartoで生成生成した実験記録ブログですa。
+これはQuartoで生成生成した実験記録ブログです。
 
-## Notes
+## 最近の記事
+
+## モチモチの記事

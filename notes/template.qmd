@@ -1,0 +1,45 @@
+---
+title: "記事タイトルをここに"
+date: 2025-01-01
+categories: [misc]
+draft: true
+toc: true
+
+execute:
+  echo: true
+  warning: false
+  message: false
+  cache: true
+---
+
+# はじめに
+
+ここに概要を書きます。
+
+## 準備
+
+```{python}
+import pandas as pd
+import numpy as np
+```
+
+## 実行例
+
+```{python}
+df = pd.DataFrame({"x": np.arange(5), "y": np.arange(5) ** 2})
+df
+```
+
+## 図の例
+
+```{python}
+import matplotlib.pyplot as plt
+
+plt.plot(df["x"], df["y"])
+plt.title("Example Plot")
+plt.show()
+```
+
+## まとめ
+
+所感や次のアクションを書きます。
