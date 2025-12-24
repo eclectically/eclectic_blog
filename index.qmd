@@ -8,8 +8,8 @@ title: "薬局薬剤師の実験ログ"
 
 ## Notes
 
-```{listing}
+::: {listing}
 contents: notes
 type: default
 sort: date desc
-```
+:::
