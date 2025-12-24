@@ -1,0 +1,6 @@
+---
+title: "はじめてのメモ"
+---
+
+- notes ディレクトリは自分で作る
+- Quarto + GitHub Pages が無事に動いた
