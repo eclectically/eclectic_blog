@@ -4,6 +4,8 @@ project:
 
 website:
   title: "myblog"
+  google-analytics: "G-SS6GRB4Q2M"
+  cookie-consent: true
   page-navigation: true
   navbar:
     left:
